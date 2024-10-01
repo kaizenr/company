@@ -1,0 +1,40 @@
+package Compani;
+
+import java.util.ArrayList;
+
+public class Empresa {
+	private String nombre;
+	private ArrayList<Empleado>listaEmpleados;
+	
+	
+	public Empresa(String nombre, ArrayList<Empleado> listaEmpleados) {
+		this.nombre = nombre;
+		this.listaEmpleados  = new ArrayList<>();
+		
+	}
+	
+	public void agregarEmpleado(Empleado empleado) {
+		listaEmpleados.add(empleado);
+		
+	}
+	
+	public void eliminarEmpleado(String nombre) {
+		listaEmpleados.removeIf(e -> e.getNombre().equals(nombre));
+	}
+	
+	public void listaEmpleados() {
+		if (listaEmpleados.isEmpty()) {
+			System.out.println("no hay empleados");
+		}
+		else {
+			for (Empleado e : listaEmpleados) {
+				System.out.println("nombre"+ getNombre() + "edad" + e.getEdad()+ "salario base" + e.salarioBase()+"comisiones" + e.getComisiones();
+			}
+			
+		}
+	}
+	
+	
+	
+	
+}

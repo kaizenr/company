@@ -1,0 +1,13 @@
+package industria;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+	
+	public static void main (String[]args) {
+		String nombre = JOptionPane.showInputDialog("nombre del empleado");
+		String edad = JOptionPane.showInputInt(null);
+		
+	}
+
+}
